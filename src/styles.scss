@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  //colors
+  --color-primary: #2196f3;
+  --color-secondary: #834bff;
+  //font size
+  --font-size-Xlarge: 2em;
+  --font-size-large: 1.5rem;
+  --font-size-medium: 1rem; //16px
+  --font-size-small: 0.87rem;
+  --font-size-Xsmall: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-Xlarge: 1.5rem;
+    --font-size-large: 1rem;
+    --font-size-medium: 0.8rem; //16px
+    --font-size-small: 0.7rem;
+    --font-size-Xsmall: 0.6rem;
+  }
+}

@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__button {
+    margin-top: 15px;
+  }
+  &__card {
+    width: 35rem;
+  }
+  &__form {
+    height: 200px;
+    width: 100%;
+  }
+  &__formElement {
+    width: 80%;
+  }
+  &__image {
+    max-width: 60%;
+  }
+  &__title {
+    font-size: var(--font-size-Xlarge);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
