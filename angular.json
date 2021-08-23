@@ -32,7 +32,8 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/fonts/font-file.scss"
             ],
             "scripts": [
               "./node_modules/popper.js/dist/popper.min.js",
