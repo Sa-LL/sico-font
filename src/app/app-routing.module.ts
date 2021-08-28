@@ -11,6 +11,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'closetsKitchens',
+    loadChildren: () =>
+      import('src/app/feature/closets-layout/closets-layout.module').then(
+        (m) => m.ClosetsLayoutModule
+      ),
+  },
+  {
     path: '**',
     component: PageNotFoundComponent,
   },

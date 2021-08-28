@@ -14,6 +14,7 @@ export class AuthService {
   URL_PATH: string = '/gerentes/signin';
 
   constructor(private http: HttpClient) {}
+
   postLogin(personal_info: AuthInterface): Observable<Record<string, string>> {
     return this.http
       .post<Record<string, string>>(

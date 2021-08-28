@@ -1,8 +1,11 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
 <main class="main">
   <div class="main__card card">
     <div class="main__body card-body">
-      <h5 class="main__title card-title">Credi-Closet's</h5>
+      <div class="main__titleContainer">
+        <h5 class="main__title">Credi-Closet's</h5>
+        <h5 class="main__subtitle">Cartago</h5>
+      </div>
       <form class="main__body main__form" [formGroup]="formValue">
         <div class="main__formElement form-floating mb-3">
           <input
@@ -20,11 +23,16 @@
             class="form-control"
             id="floatingPassword"
             placeholder="Password"
-            formControlName="password"
+            formControlName="contrasenia"
           />
           <label for="floatingPassword">Contraseña</label>
         </div>
-        <button type="button" class="main__button btn btn-dark">
+        <button
+          class="btn btn-lg main__button"
+          type="button"
+          [disabled]="!formValue.valid"
+          (click)="logIn()"
+        >
           Iniciar sesión
         </button>
       </form>
